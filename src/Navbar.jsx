@@ -27,6 +27,19 @@ function Navbar() {
           </Link>
         ))}
       </div>
+      <div className="flex-1 bg-gray-900 p-6 rounded-lg shadow-lg hover-animate mt-20">
+          
+         
+     
+            <p className="text-base font-semibold flex gap-2">
+              <span className="text-blue-300">Address:</span>
+              <span className="text-gray-400">Toshkent Viloyati</span>
+            </p>
+            <p className="text-base font-semibold flex gap-2">
+              <span className="text-blue-300">Phone:</span>
+              <span className="text-gray-400">+998 (88) 706 09-03</span>
+            </p>
+          </div>
     </div>
   );
 }
