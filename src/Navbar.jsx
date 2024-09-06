@@ -1,0 +1,33 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+function Navbar() {
+  return (
+    <div className='flex flex-col w-64 bg-gray-900 h-screen shadow-2xl'>
+      {/* Profile Section */}
+      <div className='relative w-full h-60 bg-gradient-to-b from-gray-700 to-gray-900 flex items-center justify-center border-b border-gray-600'>
+        <img className='w-44 h-40 rounded-full shadow-lg object-cover absolute top-6' src="./src/assets/myphot-removebg-preview.png" alt="Profile" />
+        <div className='absolute bottom-3 w-full flex justify-center'>
+          <p className='text-white text-xl font-semibold bg-slate-700 bg-opacity-70 px-4 py-1 rounded-lg shadow-md'>
+            Dilbek
+          </p>
+        </div>
+      </div>
+
+      {/* Navigation Links */}
+      <div className='flex flex-col mt-4'>
+        {['', 'about', 'projects', 'skills', 'contact'].map((item) => (
+          <Link
+            key={item}
+            className='flex items-center justify-center h-14 text-gray-300 text-lg font-medium hover:bg-gray-700 hover:text-white transition-all duration-300 ease-in-out'
+            to={`/${item}`}
+          >
+            {item === '' ? 'HOME' : item.toUpperCase()}
+          </Link>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+export default Navbar;
