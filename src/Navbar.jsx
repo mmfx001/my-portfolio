@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import photo from "../public/myphot-removebg-preview.png"
 
 function Navbar() {
   return (
     <div className='flex flex-col w-64 bg-gray-900 h-screen shadow-2xl'>
       {/* Profile Section */}
       <div className='relative w-full h-60 bg-gradient-to-b from-gray-700 to-gray-900 flex items-center justify-center border-b border-gray-600'>
-        <img className='w-44 h-40 rounded-full shadow-lg object-cover absolute top-6' src="./src/assets/myphot-removebg-preview.png" alt="Profile" />
+        <img className='w-44 h-40 rounded-full shadow-lg object-cover absolute top-6' src={photo} alt="Profile" />
         <div className='absolute bottom-3 w-full flex justify-center'>
           <p className='text-white text-xl font-semibold bg-slate-700 bg-opacity-70 px-4 py-1 rounded-lg shadow-md'>
             Dilbek

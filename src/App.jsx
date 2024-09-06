@@ -1,6 +1,6 @@
 import Navbar from "./Navbar"
 import { Route, Routes } from "react-router-dom"
-import errorImage from './assets/error.jpg';
+import errorImage from '../public/error.jpg';
 import Abaut from "./abaut"
 import Home from "./Home";
 import Skills from "./Skills";
