@@ -9,13 +9,16 @@ import Project from "./project";
 function App() {
 
   return (
-    <div className="flex">
+    <div
+      className="flex"
+      style={{ backgroundImage: 'url("https://wallpapercave.com/wp/wp10712541.jpg")', backgroundSize: 'cover', backgroundPosition: 'center' }}
+    >
       {/* Navbar chap tomonda qotib turishi uchun kerakli sinflar qo'shildi */}
-      <div className="sticky top-0 h-screen w-64 bg-slate-800">
+      <div className="sticky top-0 h-screen backdrop-blur-3xl">
         <Navbar />
       </div>
 
-      <div className="w-full ">
+      <div className="flex-1 ">
         {/* Main content */}
         <Routes>
           <Route path="/about" element={<Abaut />} />

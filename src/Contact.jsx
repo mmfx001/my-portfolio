@@ -31,7 +31,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-slate-800 text-white">
+    <section id="contact" className="py-20 backdrop-blur-md text-white">
       <div className="container mx-auto px-6">
         <h2 className="text-4xl font-bold text-white text-center mt-[-41px] mb-10">Contact</h2>
         <form className="space-y-8 max-w-xl mx-auto" onSubmit={handleSubmit}>
@@ -42,7 +42,7 @@ const Contact = () => {
               id="name"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              className="w-full p-4 bg-slate-700 text-white rounded-lg shadow-md border border-slate-700 focus:outline-none focus:ring-2 focus:ring-white"
+              className="w-full p-4 bg-transparent placeholder:text-gray-100 text-white rounded-lg shadow-md border border-gray-200 focus:outline-none focus:ring-2 focus:ring-white"
               placeholder="Enter your name"
             />
           </div>
@@ -53,7 +53,7 @@ const Contact = () => {
               id="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full p-4 bg-slate-700 text-white rounded-lg shadow-md border border-slate-700 focus:outline-none focus:ring-2 focus:ring-white"
+              className="w-full p-4 bg-transparent placeholder:text-gray-100 text-white rounded-lg shadow-md border border-gray-200 focus:outline-none focus:ring-2 focus:ring-white"
               placeholder="Enter your email address"
             />
           </div>
@@ -64,13 +64,13 @@ const Contact = () => {
               rows="6"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              className="w-full p-4 bg-slate-700 text-white rounded-lg shadow-md border border-slate-700 focus:outline-none focus:ring-2 focus:ring-white"
+              className="w-full p-4 bg-transparent placeholder:text-gray-100 text-white rounded-lg shadow-md border border-gray-200 focus:outline-none focus:ring-2 focus:ring-white"
               placeholder="Enter your message"
             ></textarea>
           </div>
           <button
             type="submit"
-            className="bg-slate-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-slate-700 hover:text-white transition duration-300 mx-auto block mb-[-100px]"
+            className="bg-stone-800 shadow-white text-white px-12 py-3 rounded-full font-semibold hover:bg-stone-900 hover:text-white transition duration-300 mx-auto block mb-[-100px]"
           >
             Send
           </button>
