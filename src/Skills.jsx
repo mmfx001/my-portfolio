@@ -16,7 +16,7 @@ function Skills() {
 
   return (
     <div className='p-12 backdrop-blur-md text-white min-h-screen'>
-      <h1 className='text-5xl font-bold mb-8 text-stone-300 text-center'>My Skills</h1>
+      <h1 className='text-3xl md:text-5xl font-bold mb-8 text-stone-300 text-center'>My Skills</h1>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
         {skills.map((skill) => (
           <div key={skill.name} className='backdrop-blur-3xl shadow-lg rounded-lg shadow-stone-600 p-6 transition-transform transform hover:scale-105'>

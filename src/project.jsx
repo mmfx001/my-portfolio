@@ -1,63 +1,47 @@
 import React from 'react';
-import weatherImg from '../public/weater.png';  // Rasmlarni import qilish
+import weatherImg from '../public/weater.png';
 import apiTranslateImg from '../public/Apitranslate.jpg';
 import pizzaImg from '../public/pizza.jpg';
 import clockImg from '../public/soat.jpg';
 
 function Project() {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 p-8 backdrop-blur-md">
-      <div className="backdrop-blur-3xl flex flex-col justify-between  shadow-stone-600 hover:shadow-stone-400 text-white p-6 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300">
-        <img className="w-full h-48 object-cover rounded-md border-2 border-slate-600" src={weatherImg} alt="Weather Project" />
-        <p className="mt-4 text-slate-200">
-          This project is built with React and shows the weather. You can set the language to Uzbek, Russian, and English. The project is responsive and works on iPads, desktops, and mobile devices.
-        </p>
-        <a target='_blank' rel='noopener noreferrer' href="https://github.com/mmfx001/weather" className="mt-4 inline-block text-white-400 font-semibold hover:underline hover:text-gray-100 transition-colors duration-300">
-          Code ➡️
-        </a>
-        <a target='_blank' rel='noopener noreferrer' href="https://weather-two-rose.vercel.app/" className="mt-4 inline-block text-white-400 font-semibold hover:underline hover:text-gray-100 transition-colors duration-300">
-          Weather ➡️
-        </a>
-      </div>
-
-      <div className="backdrop-blur-3x flex flex-col justify-between shadow-stone-600 hover:shadow-stone-400 text-white p-6 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300">
-        <img className="w-full h-48 object-cover rounded-md border-2 border-slate-600" src={apiTranslateImg} alt="API Translate Project" />
-        <p className="mt-4 text-slate-200">
-          This project is built with React and displays data coming from an API. You can set the language to Uzbek, Russian, and English.
-        </p>
-        <a target='_blank' rel='noopener noreferrer' href="https://github.com/mmfx001/ApiTranslate" className="mt-4 inline-block text-white-400 font-semibold hover:underline hover:text-gray-100 transition-colors duration-300">
-          Code ➡️
-        </a>
-        <a target='_blank' rel='noopener noreferrer' href="https://api-translate-ivory.vercel.app/" className="mt-4 inline-block text-white-400 font-semibold hover:underline hover:text-gray-100 transition-colors duration-300">
-          API Translate ➡️
-        </a>
-      </div>
-
-      <div className="backdrop-blur-3x flex flex-col justify-between shadow-stone-600 hover:shadow-stone-400 text-white p-6 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300">
-        <img className="w-full h-48 object-cover rounded-md border-2 border-slate-600" src={pizzaImg} alt="Pizza Project" />
-        <p className="mt-4 text-slate-200">
-          This project is built with HTML, CSS, and JavaScript. It shows the pizza menu, admin section, and basket section.
-        </p>
-        <a target='_blank' rel='noopener noreferrer' href="https://github.com/mmfx001/pizza" className="mt-4 inline-block text-white-400 font-semibold hover:underline hover:text-gray-100 transition-colors duration-300">
-          Code ➡️
-        </a>
-        <a target='_blank' rel='noopener noreferrer' href="https://pizza-seven-delta.vercel.app/index.html" className="mt-4 inline-block text-white-400 font-semibold hover:underline hover:text-gray-100 transition-colors duration-300">
-          Pizza ➡️
-        </a>
-      </div>
-
-      <div className="backdrop-blur-3x flex flex-col justify-between shadow-stone-600 hover:shadow-stone-400 text-white p-6 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300">
-        <img className="w-full h-48 object-cover rounded-md border-2 border-slate-600" src={clockImg} alt="Clock Project" />
-        <p className="mt-4 text-slate-200">
-          This project is built with HTML, CSS, and JavaScript. It shows an alarm clock and timer. The project is responsive and works on iPads, desktops, and mobile devices.
-        </p>
-        <a target='_blank' rel='noopener noreferrer' href="https://github.com/mmfx001/Soat.jsx" className="mt-4 inline-block text-white-400 font-semibold hover:underline hover:text-gray-100 transition-colors duration-300">
-          Code ➡️
-        </a>
-        <a target='_blank' rel='noopener noreferrer' href="https://soat-jsx.vercel.app/" className="mt-4 inline-block text-white-400 font-semibold hover:underline hover:text-gray-100 transition-colors duration-300">
-          Clock ➡️
-        </a>
-      </div>
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-4 md:p-8 backdrop-blur-md">
+      {[{
+        img: weatherImg,
+        title: "Weather Project",
+        description: "This project is built with React and shows the weather. You can set the language to Uzbek, Russian, and English. The project is responsive and works on iPads, desktops, and mobile devices.",
+        codeLink: "https://github.com/mmfx001/weather",
+        demoLink: "https://weather-two-rose.vercel.app/"
+      }, {
+        img: apiTranslateImg,
+        title: "API Translate Project",
+        description: "This project is built with React and displays data coming from an API. You can set the language to Uzbek, Russian, and English.",
+        codeLink: "https://github.com/mmfx001/ApiTranslate",
+        demoLink: "https://api-translate-ivory.vercel.app/"
+      }, {
+        img: pizzaImg,
+        title: "Pizza Project",
+        description: "This project is built with HTML, CSS, and JavaScript. It shows the pizza menu, admin section, and basket section.",
+        codeLink: "https://github.com/mmfx001/pizza",
+        demoLink: "https://pizza-seven-delta.vercel.app/index.html"
+      }, {
+        img: clockImg,
+        title: "Clock Project",
+        description: "This project shows a digital clock.",
+        codeLink: "#",
+        demoLink: "#"
+      }].map((project, index) => (
+        <div key={index} className="backdrop-blur-3xl flex flex-col p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+          <img src={project.img} alt={project.title} className="rounded-md mb-4 h-48 object-cover" />
+          <h2 className="text-xl font-semibold mb-2 text-center">{project.title}</h2>
+          <p className="text-gray-200 mb-4">{project.description}</p>
+          <div className="flex justify-between">
+            <a href={project.codeLink} target="_blank" rel="noopener noreferrer" className="text-blue-500">View Code</a>
+            <a href={project.demoLink} target="_blank" rel="noopener noreferrer" className="text-blue-500">Live Demo</a>
+          </div>
+        </div>
+      ))}
     </div>
   );
 }

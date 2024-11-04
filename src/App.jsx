@@ -10,16 +10,16 @@ function App() {
 
   return (
     <div
-      className="flex"
+      className="flex flex-col md:flex-row"
       style={{ backgroundImage: 'url("https://wallpapercave.com/wp/wp10712541.jpg")', backgroundSize: 'cover', backgroundPosition: 'center' }}
     >
-      {/* Navbar chap tomonda qotib turishi uchun kerakli sinflar qo'shildi */}
-      <div className="sticky top-0 h-screen backdrop-blur-3xl">
+      {/* Navbar */}
+      <div className="sticky top-0 z-10 w-full md:w-72">
         <Navbar />
       </div>
 
+      {/* Main content */}
       <div className="flex-1 ">
-        {/* Main content */}
         <Routes>
           <Route path="/about" element={<Abaut />} />
           <Route path="/" element={<Home />} />
