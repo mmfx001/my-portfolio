@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaEnvelope, FaHome, FaProjectDiagram, FaTools, FaUserAlt } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 function Navbar() {
@@ -19,13 +20,20 @@ function Navbar() {
       </div>
       {/* Navigation Links */}
       <div className='flex flex-wrap items-center md:flex-col md:items-center md:mt-0 justify-between'>
-        {['', 'about', 'projects', 'skills', 'contact'].map((item) => (
+        {[
+          { name: 'HOME', path: '/', icon: <FaHome /> },
+          { name: 'ABOUT', path: '/about', icon: <FaUserAlt /> },
+          { name: 'PROJECTS', path: '/projects', icon: <FaProjectDiagram /> },
+          { name: 'SKILLS', path: '/skills', icon: <FaTools /> },
+          { name: 'CONTACT', path: '/contact', icon: <FaEnvelope /> },
+        ].map((item) => (
           <Link
-            key={item}
-            className='flex items-center p-3 md:p-0  focus:border-b-2  md:w-full md:justify-center h-14 text-gray-300 text-xs md:text-lg font-medium hover:text-white transition-all duration-300 ease-in-out'
-            to={`/${item}`}
+          key={item.name}
+          to={item.path}
+            className='flex gap-2 items-center p-2 md:p-0  focus:border-b-2  md:w-full md:justify-center h-14 text-gray-300 text-xs md:text-lg font-medium hover:text-white transition-all duration-300 ease-in-out'
           >
-            {item === '' ? 'HOME' : item.toUpperCase()}
+            {item.icon}
+            {item.name}
           </Link>
         ))}
       </div>

@@ -5,7 +5,7 @@ function Home() {
 
   return (
     <div 
-      className={`flex flex-col  justify-center items-center  w-full h-[91.3vh] text-center bg-cover bg-center`}
+      className={`flex flex-col  justify-center items-center  w-full h-screen text-center bg-cover bg-center`}
     >
       <div className='w-[83%] md:w-[50%] h-[40%] backdrop-blur-md shadow-stone-300 mb-24 rounded-3xl shadow-lg flex flex-col items-center justify-center animated-border'>
         <h1 className={`text-2xl md:text-5xl font-bold text-black`}>

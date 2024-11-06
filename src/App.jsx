@@ -14,12 +14,12 @@ function App() {
       style={{ backgroundImage: 'url("https://wallpapercave.com/wp/wp10712541.jpg")', backgroundSize: 'cover', backgroundPosition: 'center' }}
     >
       {/* Navbar */}
-      <div className="sticky top-0 z-10 w-full md:w-72">
+      <div className="fixed top-0  z-10 w-full md:w-72">
         <Navbar />
       </div>
 
       {/* Main content */}
-      <div className="flex-1 ">
+      <div className="flex-1 md:ml-72">
         <Routes>
           <Route path="/about" element={<Abaut />} />
           <Route path="/" element={<Home />} />
