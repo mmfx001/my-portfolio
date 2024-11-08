@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
-    <div className='flex flex-col w-full md:w-72 backdrop-blur-md  shadow-2xl'>
+    <div className="flex flex-col w-full md:w-72 shadow-2xl" style={{ backdropFilter: 'blur(42px)' }}>
       {/* Profile Section */}
       <div className='relative w-full h-60 hidden md:flex  items-center justify-center'>
         <img
