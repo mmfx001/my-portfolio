@@ -36,7 +36,7 @@ function Project() {
       }].map((project, index) => (
         <div key={index} style={{ backdropFilter: 'blur(42px)' }} className="backdrop-blur-3xl justify-between shadow-stone-400 flex flex-col p-5 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
           <div className='w-full'>
-            <img src={project.img} alt={project.title} className="rounded-md mb-4 h-36 w-full object-cover" />
+            <img src={project.img} alt={project.title} className="rounded-md mb-4 md:h-36  w-full object-cover" />
             <h2 className="text-xl font-semibold mb-2 text-white text-center">{project.title}</h2>
             <p className="text-gray-200 mb-4">{project.description}</p>
           </div>

@@ -19,7 +19,7 @@ function App() {
       </div>
 
       {/* Main content */}
-      <div className="flex-1 md:ml-72">
+      <div className="flex-1 md:ml-72 md:mt-0 mt-28">
         <Routes>
           <Route path="/about" element={<Abaut />} />
           <Route path="/" element={<Home />} />
