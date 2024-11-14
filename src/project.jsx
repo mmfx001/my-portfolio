@@ -2,6 +2,7 @@ import React from 'react';
 import shop from '../public/shopp.jpg';
 import mars from '../public/mars.jpg';
 import map from '../public/map.jpg';
+import weather from '../public/weather.jpg';
 import chatapp from '../public/chatapp.jpg';
 
 function Project() {
@@ -27,7 +28,14 @@ function Project() {
         description: "Bu loyiha sotuvdagi turar joylarning xaritadagi joylashuvlari.Bu xaritadagi joylaishuvi, malumotlari va bizga kerak bolgan uylarni onson topish uchun filter mavjud. Faqat bu hozircha localni yani run qilsangiz ishlaydi! responsive 100%",
         codeLink: "https://github.com/mmfx001/map",
         demoLink: "https://map-81wf-git-master-dilbeks-projects.vercel.app/"
-      }, {
+      }
+      , {
+        img: weather,
+        title: "Weather Project",
+        description: "Bu loyiha istalgan shaxarni ob-havosini korasstadi va i18n bor yani 3 xil til! responsive 100%",
+        codeLink: "https://github.com/mmfx001/weather",
+        demoLink: "https://weather-two-rose.vercel.app/"
+      } ,{
         img: chatapp,
         title: "Chat-App Project",
         description: "Bu loyihada odamlar bilan suhbatlashishingiz mumkun bu loyihada ovozli habr video habarlar ham yuborish imkooniyati bor. responsive 100%.",
