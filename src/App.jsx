@@ -2,7 +2,6 @@ import Navbar from "./Navbar"
 import { Route, Routes } from "react-router-dom"
 import errorImage from '../public/error.jpg';
 import Abaut from "./abaut"
-import Home from "./Home";
 import Skills from "./Skills";
 import Contact from "./Contact";
 import Project from "./project";
@@ -21,8 +20,7 @@ function App() {
       {/* Main content */}
       <div className="flex-1 md:ml-72 md:mt-0 mt-28">
         <Routes>
-          <Route path="/about" element={<Abaut />} />
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Abaut />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/projects" element={<Project />} />

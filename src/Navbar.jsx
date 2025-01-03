@@ -21,8 +21,7 @@ function Navbar() {
       {/* Navigation Links */}
       <div className='flex flex-wrap items-center md:flex-col md:items-center md:mt-0 justify-between'>
         {[
-          { name: 'HOME', path: '/', icon: <FaHome /> },
-          { name: 'ABOUT', path: '/about', icon: <FaUserAlt /> },
+          { name: 'ABOUT', path: '/', icon: <FaUserAlt /> },
           { name: 'PROJECTS', path: '/projects', icon: <FaProjectDiagram /> },
           { name: 'SKILLS', path: '/skills', icon: <FaTools /> },
           { name: 'CONTACT', path: '/contact', icon: <FaEnvelope /> },

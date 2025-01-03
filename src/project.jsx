@@ -1,7 +1,7 @@
 import React from 'react';
 import shop from '../public/shopp.jpg';
 import mars from '../public/mars.jpg';
-import map from '../public/map.jpg';
+import map from '../public/unversty.jpg';
 import weather from '../public/weather.jpg';
 import chatapp from '../public/chatapp.jpg';
 
@@ -21,13 +21,12 @@ function Project() {
         codeLink: "https://github.com/mmfx001/ApiTranslate",
         marscorelink: "https://marscore-git-main-dilbeks-projects.vercel.app/",
         marsadminlink: "https://mars-adminn-git-master-dilbeks-projects.vercel.app/",
-        marsspacelink: "https://marsclient-tfhf-git-master-dilbeks-projects.vercel.app/"
       }, {
         img: map,
-        title: "Map-location Project",
-        description: "Bu loyiha sotuvdagi turar joylarning xaritadagi joylashuvlari.Bu xaritadagi joylaishuvi, malumotlari va bizga kerak bolgan uylarni onson topish uchun filter mavjud. Faqat bu hozircha localni yani run qilsangiz ishlaydi! responsive 100%",
-        codeLink: "https://github.com/mmfx001/map",
-        demoLink: "https://map-81wf-git-master-dilbeks-projects.vercel.app/"
+        title: "Universty Project",
+        description: "Bu loyiha Universty uchun qilingan.Faqat bu hozircha localni yani run qilsangiz ishlaydi! responsive 100%",
+        codeLink: "https://github.com/mmfx001/unversty.git",
+        demoLink: "https://universty.vercel.app/"
       }
       , {
         img: weather,
