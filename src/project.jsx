@@ -21,7 +21,9 @@ function Project() {
         codeLink: "https://github.com/mmfx001/ApiTranslate",
         marscorelink: "https://marscore-git-main-dilbeks-projects.vercel.app/",
         marsadminlink: "https://mars-adminn-git-master-dilbeks-projects.vercel.app/",
-      }, {
+        marsspacelink: "https://marsclient-tfhf-git-master-dilbeks-projects.vercel.app/"
+      },
+      {
         img: map,
         title: "Universty Project",
         description: "Bu loyiha Universty uchun qilingan.Faqat bu hozircha localni yani run qilsangiz ishlaydi! responsive 100%",
